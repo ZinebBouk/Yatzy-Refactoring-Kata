@@ -5,7 +5,7 @@ import yatzygame.yatzyscorecategories.familyscorecategories.straightfamilyscorec
 
 import java.util.List;
 
-public class SmallStraightScoreCategory extends AbstractStraightFamilyScoreCategory {
+public class SmallStraightScoreCategoryImpl extends AbstractStraightFamilyScoreCategory {
 
     public static final int SMALL_STRAIGHT_SCORE = 15;
     public static final List<Integer> SMALL_STRAIGHT_LIST = List.of(1, 2, 3, 4, 5);

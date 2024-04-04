@@ -3,7 +3,7 @@ package yatzygame.yatzyscorecategories.familyscorecategories.specialfamilyscorec
 import yatzygame.models.Roll;
 import yatzygame.yatzyscorecategories.ScoreCategory;
 
-public class YatzyScoreCategory implements ScoreCategory {
+public class YatzyScoreCategoryImpl implements ScoreCategory {
 
     public static final int YATZY_SCORE = 50;
 

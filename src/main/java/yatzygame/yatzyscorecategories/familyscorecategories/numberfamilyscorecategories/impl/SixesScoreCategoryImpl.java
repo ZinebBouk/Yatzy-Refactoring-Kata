@@ -3,10 +3,11 @@ package yatzygame.yatzyscorecategories.familyscorecategories.numberfamilyscoreca
 import yatzygame.models.Roll;
 import yatzygame.yatzyscorecategories.familyscorecategories.numberfamilyscorecategories.AbstractNumberFamilyScoreCategory;
 
-public class OnesScoreCategory extends AbstractNumberFamilyScoreCategory {
+public class SixesScoreCategoryImpl extends AbstractNumberFamilyScoreCategory {
 
     @Override
     public int calculateScore(Roll roll) {
-        return getScoreFromNumber(roll, 1);
+        return getScoreFromNumber(roll, 6);
     }
 }
+

@@ -3,13 +3,13 @@ package yatzygame.familyscorecategory.straightfamilyscorecategories.impl;
 import org.junit.Test;
 import yatzygame.models.Dice;
 import yatzygame.models.Roll;
-import yatzygame.yatzyscorecategories.familyscorecategories.straightfamilyscorecategories.impl.LargeStraightScoreCategory;
+import yatzygame.yatzyscorecategories.familyscorecategories.straightfamilyscorecategories.impl.LargeStraightScoreCategoryImpl;
 
 import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
 
-public class LargeStraightStrategyTest {
+public class LargeStraightScoreCategoryImplTest {
 
-    LargeStraightScoreCategory largeStraightStrategy = new LargeStraightScoreCategory();
+    LargeStraightScoreCategoryImpl largeStraightStrategy = new LargeStraightScoreCategoryImpl();
 
     @Test
     public void test_case_unconventional_values_LargeStraightStrategy(){
@@ -26,7 +26,7 @@ public class LargeStraightStrategyTest {
             largeStraightStrategy.calculateScore(
                 Roll.of(Dice.THREE, Dice.FOUR, Dice.TWO, Dice.SIX, Dice.FIVE)
             )
-        ).isEqualTo(LargeStraightScoreCategory.LARGE_STRAIGHT_SCORE);
+        ).isEqualTo(LargeStraightScoreCategoryImpl.LARGE_STRAIGHT_SCORE);
     }
 
     @Test
@@ -35,6 +35,6 @@ public class LargeStraightStrategyTest {
             largeStraightStrategy.calculateScore(
                 Roll.of(Dice.TWO, Dice.THREE, Dice.FOUR, Dice.FIVE, Dice.SIX)
             )
-        ).isEqualTo(LargeStraightScoreCategory.LARGE_STRAIGHT_SCORE);
+        ).isEqualTo(LargeStraightScoreCategoryImpl.LARGE_STRAIGHT_SCORE);
     }
 }

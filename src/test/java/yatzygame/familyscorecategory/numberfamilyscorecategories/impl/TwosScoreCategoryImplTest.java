@@ -3,13 +3,13 @@ package yatzygame.familyscorecategory.numberfamilyscorecategories.impl;
 import org.junit.Test;
 import yatzygame.models.Dice;
 import yatzygame.models.Roll;
-import yatzygame.yatzyscorecategories.familyscorecategories.numberfamilyscorecategories.impl.TwosScoreCategory;
+import yatzygame.yatzyscorecategories.familyscorecategories.numberfamilyscorecategories.impl.TwosScoreCategoryImpl;
 
 import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
 
-public class TwosStrategyTest {
+public class TwosScoreCategoryImplTest {
 
-    TwosScoreCategory twosStrategy = new TwosScoreCategory();
+    TwosScoreCategoryImpl twosStrategy = new TwosScoreCategoryImpl();
 
     @Test
     public void test_sum_of_one_two_TwosStrategy(){

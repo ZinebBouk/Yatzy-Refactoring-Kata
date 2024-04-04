@@ -3,13 +3,13 @@ package yatzygame.familyscorecategory.straightfamilyscorecategories.impl;
 import org.junit.Test;
 import yatzygame.models.Dice;
 import yatzygame.models.Roll;
-import yatzygame.yatzyscorecategories.familyscorecategories.straightfamilyscorecategories.impl.SmallStraightScoreCategory;
+import yatzygame.yatzyscorecategories.familyscorecategories.straightfamilyscorecategories.impl.SmallStraightScoreCategoryImpl;
 
 import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
 
-public class SmallStraightStrategyTest {
+public class SmallStraightScoreCategoryImplTest {
 
-    SmallStraightScoreCategory smallStraightStrategy = new SmallStraightScoreCategory();
+    SmallStraightScoreCategoryImpl smallStraightStrategy = new SmallStraightScoreCategoryImpl();
 
     @Test
     public void test_case_unconventional_values_SmallStraightStrategy(){
@@ -26,7 +26,7 @@ public class SmallStraightStrategyTest {
             smallStraightStrategy.calculateScore(
                 Roll.of(Dice.TWO, Dice.FOUR, Dice.ONE, Dice.THREE, Dice.FIVE)
             )
-        ).isEqualTo(SmallStraightScoreCategory.SMALL_STRAIGHT_SCORE);
+        ).isEqualTo(SmallStraightScoreCategoryImpl.SMALL_STRAIGHT_SCORE);
     }
 
     @Test
@@ -35,6 +35,6 @@ public class SmallStraightStrategyTest {
             smallStraightStrategy.calculateScore(
                 Roll.of(Dice.ONE, Dice.TWO, Dice.THREE, Dice.FOUR, Dice.FIVE)
             )
-        ).isEqualTo(SmallStraightScoreCategory.SMALL_STRAIGHT_SCORE);
+        ).isEqualTo(SmallStraightScoreCategoryImpl.SMALL_STRAIGHT_SCORE);
     }
 }

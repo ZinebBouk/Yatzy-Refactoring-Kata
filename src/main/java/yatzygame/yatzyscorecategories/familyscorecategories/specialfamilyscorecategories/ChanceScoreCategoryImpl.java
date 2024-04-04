@@ -4,7 +4,7 @@ import yatzygame.models.Dice;
 import yatzygame.models.Roll;
 import yatzygame.yatzyscorecategories.ScoreCategory;
 
-public class ChanceScoreCategory implements ScoreCategory {
+public class ChanceScoreCategoryImpl implements ScoreCategory {
 
     @Override
     public int calculateScore(Roll roll) {

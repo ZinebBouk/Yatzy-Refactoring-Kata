@@ -3,13 +3,13 @@ package yatzygame.familyscorecategory.upletfamilyscorecategories.impl;
 import org.junit.Test;
 import yatzygame.models.Dice;
 import yatzygame.models.Roll;
-import yatzygame.yatzyscorecategories.familyscorecategories.upletfamilyscorecategories.impl.TwoPairsScoreCategory;
+import yatzygame.yatzyscorecategories.familyscorecategories.upletfamilyscorecategories.impl.TwoPairsScoreCategoryImpl;
 
 import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
 
-public class TwoPairsStrategyTest {
+public class TwoPairsScoreCategoryImplTest {
 
-    TwoPairsScoreCategory twoPairsStrategy = new TwoPairsScoreCategory();
+    TwoPairsScoreCategoryImpl twoPairsStrategy = new TwoPairsScoreCategoryImpl();
 
     @Test
     public void test_case_contain_two_pairs_TwoPairsStrategy(){

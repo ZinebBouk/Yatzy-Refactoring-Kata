@@ -3,10 +3,10 @@ package yatzygame.yatzyscorecategories.familyscorecategories.upletfamilyscorecat
 import yatzygame.models.Roll;
 import yatzygame.yatzyscorecategories.familyscorecategories.upletfamilyscorecategories.samekindfamilyscorecategories.AbstractSameKindScoreCategory;
 
-public class PairScoreCategory extends AbstractSameKindScoreCategory {
+public class FourOfKindScoreCategoryImpl extends AbstractSameKindScoreCategory {
 
     @Override
     public int calculateScore(Roll roll) {
-        return getScoreOfSameKinds(roll, 2);
+        return getScoreOfSameKinds(roll, 4);
     }
 }

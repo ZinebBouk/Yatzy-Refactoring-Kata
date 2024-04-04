@@ -3,13 +3,13 @@ package yatzygame.familyscorecategory.specialfamilyscorecategories;
 import org.junit.Test;
 import yatzygame.models.Dice;
 import yatzygame.models.Roll;
-import yatzygame.yatzyscorecategories.familyscorecategories.specialfamilyscorecategories.YatzyScoreCategory;
+import yatzygame.yatzyscorecategories.familyscorecategories.specialfamilyscorecategories.YatzyScoreCategoryImpl;
 
 import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
 
-public class YatzyStrategyTest {
+public class YatzyScoreCategoryImplTest {
 
-    YatzyScoreCategory yatzyStrategy = new YatzyScoreCategory();
+    YatzyScoreCategoryImpl yatzyStrategy = new YatzyScoreCategoryImpl();
 
     @Test
     public void test_case_different_value_YatzyStrategy(){
@@ -26,6 +26,6 @@ public class YatzyStrategyTest {
             yatzyStrategy.calculateScore(
                 Roll.of(Dice.THREE, Dice.THREE, Dice.THREE, Dice.THREE, Dice.THREE)
             )
-        ).isEqualTo(YatzyScoreCategory.YATZY_SCORE);
+        ).isEqualTo(YatzyScoreCategoryImpl.YATZY_SCORE);
     }
 }

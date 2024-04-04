@@ -3,7 +3,7 @@ package yatzygame.yatzyscorecategories.familyscorecategories.upletfamilyscorecat
 import yatzygame.models.Roll;
 import yatzygame.yatzyscorecategories.familyscorecategories.upletfamilyscorecategories.samekindfamilyscorecategories.AbstractSameKindScoreCategory;
 
-public class ThreeOfKindScoreCategory extends AbstractSameKindScoreCategory {
+public class ThreeOfKindScoreCategoryImpl extends AbstractSameKindScoreCategory {
 
     @Override
     public int calculateScore(Roll roll) {

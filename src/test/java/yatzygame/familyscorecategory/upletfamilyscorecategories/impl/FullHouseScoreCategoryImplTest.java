@@ -3,13 +3,13 @@ package yatzygame.familyscorecategory.upletfamilyscorecategories.impl;
 import org.junit.Test;
 import yatzygame.models.Dice;
 import yatzygame.models.Roll;
-import yatzygame.yatzyscorecategories.familyscorecategories.upletfamilyscorecategories.impl.FullHouseScoreCategory;
+import yatzygame.yatzyscorecategories.familyscorecategories.upletfamilyscorecategories.impl.FullHouseScoreCategoryImpl;
 
 import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
 
-public class FullHouseStrategyTest {
+public class FullHouseScoreCategoryImplTest {
 
-    FullHouseScoreCategory fullHouseStrategy = new FullHouseScoreCategory();
+    FullHouseScoreCategoryImpl fullHouseStrategy = new FullHouseScoreCategoryImpl();
 
     @Test
     public void test_case_contain_two_and_three_of_kind_FullHouseStrategy(){

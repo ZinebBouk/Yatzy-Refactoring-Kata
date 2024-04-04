@@ -4,25 +4,22 @@ import yatzygame.models.Dice;
 import yatzygame.models.Roll;
 import yatzygame.yatzyscorecategories.familyscorecategories.upletfamilyscorecategories.AbstractUpletFamilyScoreCategory;
 
-import java.util.List;
 import java.util.Map;
 
-public class FullHouseScoreCategory extends AbstractUpletFamilyScoreCategory {
-
-    public static final List<Long> FULL_HOUSE_LIST = List.of(2L, 3L);
+public class TwoPairsScoreCategoryImpl extends AbstractUpletFamilyScoreCategory {
 
     @Override
     public int calculateScore(Roll roll) {
         Map<Dice, Long> occurrences = getCountOccurrences(roll);
+        occurrences.entrySet()
+            .removeIf(entry -> entry.getValue() < 2);
 
-        if (occurrences.values().containsAll(FULL_HOUSE_LIST)) {
-            return occurrences
-                .entrySet()
+        if (occurrences.values().size() == 2) {
+            return occurrences.keySet()
                 .stream()
-                .mapToInt(entry -> entry.getKey().getValue() * entry.getValue().intValue())
-                .sum();
+                .mapToInt(Dice::getValue)
+                .sum() * 2;
         }
-
         return 0;
     }
 }

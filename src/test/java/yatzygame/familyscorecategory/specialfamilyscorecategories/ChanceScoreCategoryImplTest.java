@@ -3,13 +3,13 @@ package yatzygame.familyscorecategory.specialfamilyscorecategories;
 import org.junit.Test;
 import yatzygame.models.Dice;
 import yatzygame.models.Roll;
-import yatzygame.yatzyscorecategories.familyscorecategories.specialfamilyscorecategories.ChanceScoreCategory;
+import yatzygame.yatzyscorecategories.familyscorecategories.specialfamilyscorecategories.ChanceScoreCategoryImpl;
 
 import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
 
-public class ChanceStrategyTest {
+public class ChanceScoreCategoryImplTest {
 
-    ChanceScoreCategory chanceStrategy = new ChanceScoreCategory();
+    ChanceScoreCategoryImpl chanceStrategy = new ChanceScoreCategoryImpl();
 
     @Test
     public void test_sum_of_different_value_ChanceStrategy(){

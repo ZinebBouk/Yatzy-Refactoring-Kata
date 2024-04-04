@@ -3,13 +3,13 @@ package yatzygame.familyscorecategory.upletfamilyscorecategories.samekindfamilys
 import org.junit.Test;
 import yatzygame.models.Dice;
 import yatzygame.models.Roll;
-import yatzygame.yatzyscorecategories.familyscorecategories.upletfamilyscorecategories.samekindfamilyscorecategories.impl.ThreeOfKindScoreCategory;
+import yatzygame.yatzyscorecategories.familyscorecategories.upletfamilyscorecategories.samekindfamilyscorecategories.impl.ThreeOfKindScoreCategoryImpl;
 
 import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
 
-public class ThreeOfKindStrategyTest {
+public class ThreeOfKindScoreCategoryImplTest {
 
-    ThreeOfKindScoreCategory threeOfKindStrategy = new ThreeOfKindScoreCategory();
+    ThreeOfKindScoreCategoryImpl threeOfKindStrategy = new ThreeOfKindScoreCategoryImpl();
 
     @Test
     public void test_case_contain_three_of_kind_ThreeOfKindStrategy(){
