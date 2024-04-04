@@ -5,7 +5,7 @@ import yatzygame.models.Dice;
 import yatzygame.models.Roll;
 import yatzygame.yatzyscorecategories.familyscorecategories.numberfamilyscorecategories.impl.SixesScoreCategory;
 
-import static org.assertj.core.api.Java6Assertions.assertThat;
+import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
 
 public class SixesStrategyTest {
 
@@ -25,7 +25,7 @@ public class SixesStrategyTest {
             sixesStrategy.calculateScore(
                 Roll.of(Dice.FOUR, Dice.ONE, Dice.THREE, Dice.TWO, Dice.TWO)
             )
-        ).isEqualTo(0);
+        ).isZero();
     }
 
     @Test

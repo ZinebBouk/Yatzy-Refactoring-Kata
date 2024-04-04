@@ -5,7 +5,7 @@ import yatzygame.models.Dice;
 import yatzygame.models.Roll;
 import yatzygame.yatzyscorecategories.familyscorecategories.straightfamilyscorecategories.impl.SmallStraightScoreCategory;
 
-import static org.assertj.core.api.Java6Assertions.assertThat;
+import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
 
 public class SmallStraightStrategyTest {
 
@@ -17,7 +17,7 @@ public class SmallStraightStrategyTest {
             smallStraightStrategy.calculateScore(
                 Roll.of(Dice.FOUR, Dice.THREE, Dice.FOUR, Dice.FIVE, Dice.TWO)
             )
-        ).isEqualTo(0);
+        ).isZero();
     }
 
     @Test
