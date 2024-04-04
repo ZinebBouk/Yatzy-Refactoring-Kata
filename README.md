@@ -1,11 +1,22 @@
-_Support this and all my katas via [Patreon](https://www.patreon.com/EmilyBache)_
+# Yatzy Game Refacto
 
-# Yatzy Refactoring Kata
+This Java program is the result of my refactoring exercise on the main implementation of the Yatzy game, aimed at improving the code. It was forked from the repository.
 
-There is a [top code kata video](https://youtu.be/SvcJKNF_nRQ) explaining why you might want to try this refactoring kata. The original exercise was designed by Jon Jagger and is available in his Cyber-Dojo. See [his blog post](http://jonjagger.blogspot.co.uk/2012/05/yahtzee-cyber-dojo-refactoring-in-java.html). I have changed it a little, so that the rules more closely match what I'm used to.
+The Yatzy game is a simple dice game where each player rolls five six-sided dice. They have the option to re-roll some or all of the dice up to three times, including the original roll.
 
-If you like this Kata, you may be interested in [my books](https://leanpub.com/u/emilybache) and website [SammanCoaching.org](https://sammancoaching.org)
+### Instructions
 
-## Kata Description
+To clean the project and remove previously generated files, use the following command:
+ ``` 
+ mvn clean 
+ ```
 
-The problem that this code is designed to solve is explained here: [Yatzy](https://sammancoaching.org/kata_descriptions/yatzy.html)
+To compile the project, execute the following command:
+```
+mvn compile
+```
+
+To run the unit tests, use the following command:
+```
+mvn test
+```
